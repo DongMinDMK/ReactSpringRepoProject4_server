@@ -28,6 +28,7 @@ public class MailController {
             result.put("message", "OK");
             result.put("number", num);
         }catch(Exception e){
+            e.printStackTrace();
             result.put("message", "이메일 전송에 실패하였습니다.");
         }
 
